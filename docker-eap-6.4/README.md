@@ -2,6 +2,7 @@
 
 
 Add the JBoss EAP 6.4 Zip File to this directory and run from here:
+
 docker build -t tarabi/jboss-eap-6.4 .
 
 To run the image when the build is complete:
