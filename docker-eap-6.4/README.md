@@ -6,4 +6,4 @@ docker build -t tarabi/jboss-eap-6.4 .
 
 To run the image when the build is complete:
 
-docker run -p 8180:8080 -p 9190:9990 -p 9899:9999 --name test-eap -t tarabi/jboss-eap-6.4
+docker run -p 8180:8080 -p 9190:9990 -p 9899:9999 --name <image-name> -t tarabi/jboss-eap-6.4
