@@ -1,6 +1,5 @@
 # docker-container-eap-6.4
 
-
 Add the JBoss EAP 6.4 Zip File to this directory and run from here:
 
 docker build -t tarabi/jboss-eap-6.4 .
