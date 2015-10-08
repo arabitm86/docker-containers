@@ -13,7 +13,7 @@ ENV JBOSS_HOME /opt/jboss/jboss-eap-6.4
 RUN $JBOSS_HOME/bin/add-user.sh -u admin -p admin1234!  --silent
 RUN $JBOSS_HOME/bin/add-user.sh -a -u admin -p admin1234! -g admin --silent
 
-RUN echo "JAVA_OPTS=\"\$JAVA_OPTS -Djboss.bind.address=0.0.0.0 -Djboss.bind.address.management=0.0.0.0\"" >> $JBOSS_HOME/bin/standalone.conf
+RUN echo "JAVA_OPTS=\"\$JAVA_OPTS -Djboss.bind.address=0.0.0.0 -Dorg.uberfire.nio.git.ssh.host=0.0.0.0 -Dorg.uberfire.nio.git.daemon.host=0.0.0.0 -Djboss.bind.address.management=0.0.0.0\"" >> $JBOSS_HOME/bin/standalone.conf
 
 EXPOSE 8080 9990 9999 8009 8443 3528 3529 5445 8090 4447 4712 4713 8001 9418
 
