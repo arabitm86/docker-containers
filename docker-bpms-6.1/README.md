@@ -2,13 +2,11 @@
 
 Add the jboss-bpmsuite-6.1.0.GA-deployable-eap6.x.zip and  jboss-eap-6.4.0.zip to this directory and run from here:
 
-docker build -t tarabi/jboss-bpms-6.1 .
+docker build -t <type-name> <path-to-dockerfile>
 
-To run the image when the build is complete:
+To run the image when the build is complete and expose all ports below automatically:
 
-docker run -p 8180:8080 -p 9190:9990 -p 9899:9999 --name IMAGE-NAME -t tarabi/jboss-bpms-6.1
-
-maybe consider running: docker run --publish-all=true --name IMAGE-NAME -t tarabi/jboss-bpms-6.1 to expose all ports automatically?
+docker run --publish-all=true --name <image-name> -t <type-name>
 
 This image is pushed to dockerhub with name arabitm86/tarabi-jboss-bpms-6.1 
 
